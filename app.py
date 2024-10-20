@@ -13,7 +13,7 @@ st.set_page_config(page_title="SQL Database Chat Assistant", page_icon="💬")
 st.title("SQL Database Chat Assistant")
 
 # Welcome message
-st.write("👋 Welcome! This chatbot is here to help you with your SQL queries. You can Connect with your MySQL Database and chat with it!")
+st.write("👋 Welcome! This chatbot is here to help you with your SQL queries. You can Connect with your MySQL Database as well! ")
 
 # Instructions and example questions
 st.write("## Instructions:")
@@ -21,7 +21,6 @@ st.write("Feel free to ask me questions like:")
 st.write("- What is SQL?")
 st.write("- Can you help me with a specific SQL query?")
 st.write("- Explain database normalization.")
-st.write("- Also Questions related to your Database..")
 
 # Database options
 DB_OPTIONS = {
