@@ -4,4 +4,4 @@ langchain
 langchain-community
 openai
 sqlalchemy
-mysqlclient
+sql
