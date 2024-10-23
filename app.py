@@ -25,7 +25,7 @@ st.write("- Also Questions related to your Database..")
 
 # Database options
 DB_OPTIONS = {
-    "SQLite": "Use SQLite Database (student.db)",
+    "SQLite": "Use SQLite Database (student.db or employee.db)",
     "MySQL": "Connect to MySQL Database"
 }
 
@@ -40,15 +40,16 @@ if DB_OPTIONS["MySQL"] in selected_db:
     mysql_password = st.sidebar.text_input("Password", type="password")
     mysql_db = st.sidebar.text_input("Database Name")
 else:
-    st.sidebar.info("Using local SQLite database: student.db")
+    st.sidebar.info("Using local SQLite database: student.db or employee.db")
+    sqlite_db = st.sidebar.selectbox("Choose SQLite Database", ["student.db", "employee.db"])
 
 # OpenAI API Key input
 openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
 
 @st.cache_resource(ttl="2h")
-def configure_db(db_option):
+def configure_db(db_option, sqlite_db=None):
     if DB_OPTIONS["SQLite"] in db_option:
-        db_path = (Path(__file__).parent / "student.db").absolute()
+        db_path = (Path(__file__).parent / sqlite_db).absolute()
         db_uri = f"sqlite:///{db_path}"
     elif DB_OPTIONS["MySQL"] in db_option:
         if not all([mysql_host, mysql_user, mysql_password, mysql_db]):
@@ -61,7 +62,10 @@ def configure_db(db_option):
     
     return SQLDatabase.from_uri(db_uri)
 
-db = configure_db(selected_db)
+if DB_OPTIONS["SQLite"] in selected_db:
+    db = configure_db(selected_db, sqlite_db)
+else:
+    db = configure_db(selected_db)
 
 def create_agent(api_key, db):
     if not api_key.strip():
