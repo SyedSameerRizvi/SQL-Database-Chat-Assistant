@@ -1,7 +1,7 @@
 # SQL Database Chat Assistant 💬
 This project is a Streamlit web application designed to assist users with their SQL queries using a conversational chatbot interface. The chatbot is powered by OpenAI's GPT-4 model and can connect to both SQLite and MySQL databases to assist with a variety of database-related tasks and queries.
 
-You can check the app here: [SQL Database Chat Assistan](https://sql-database-chat-assistant-6thdvjxf9dypct3rdxltcy.streamlit.app/)
+You can check the app here: [SQL Database Chat Assistant](https://sql-database-chat-assistant-6thdvjxf9dypct3rdxltcy.streamlit.app/)
 
 ## Features
 - Database Chatbot: Ask questions about SQL, such as database design, query optimization, or even specific queries related to your database.
