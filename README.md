@@ -18,7 +18,7 @@ pip install -r requirements.txt
 1. Set OpenAI API Key: In the app, you'll need to provide your OpenAI API key.
 2. Choose a Database:
   - Use the sidebar to select either an SQLite or MySQL database.
-  - For SQLite, a student.db file will be used automatically.
+  - For SQLite, a `student.db` or `employee.db` file will can be chosen.
   - For MySQL, provide connection details such as the host, username, password, and database name.
 3. Ask SQL Queries: You can now ask the chatbot anything SQL-related:
 - "What is database normalization?"
