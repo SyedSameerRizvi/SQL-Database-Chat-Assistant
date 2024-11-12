@@ -25,3 +25,12 @@ pip install -r requirements.txt
 - "Can you help me write a JOIN query?"
 - "Explain how indexes work in SQL."
 
+## Demostration 
+![sql](https://github.com/user-attachments/assets/90cae24a-afae-443e-b43e-6ce058c26599)
+
+![sql2](https://github.com/user-attachments/assets/a9f7e9d2-14fd-4fbd-93a5-95249a8cbeb7)
+
+![sql4](https://github.com/user-attachments/assets/6cdce97a-784b-45fa-abf3-c64c5bc7b476)
+
+![sql5](https://github.com/user-attachments/assets/19812132-1f0c-4ccf-8c78-4e1978f59cca)
+
