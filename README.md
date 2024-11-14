@@ -1,6 +1,7 @@
 # SQL Database Chat Assistant 💬
+
 View the YouTube video here: [SQL Database Chat Assistant Video](https://www.youtube.com/watch?v=HgvTYbv_xUk)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Abstract
 The SQL Database Chat Assistant is a conversational application that allows users to interact with their databases using natural language. Built with Streamlit for the user interface, LangChain for handling SQL interactions, and OpenAI's GPT-4 for language understanding, this assistant transforms SQL querying into a user-friendly chat experience.
 
